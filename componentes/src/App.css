@@ -1,0 +1,6 @@
+.produto {
+  width: 250px;
+  height: 350px;
+  border: 10px white solid;
+  display: inline-block;
+}
