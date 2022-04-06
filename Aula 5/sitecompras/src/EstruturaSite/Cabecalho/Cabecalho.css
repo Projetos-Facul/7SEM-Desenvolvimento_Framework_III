@@ -1,0 +1,11 @@
+#cabecalho {
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding:5px;
+}
+
+#linktopo {
+	color: white;
+	text-decoration: none;
+}
