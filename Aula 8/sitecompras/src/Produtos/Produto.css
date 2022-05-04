@@ -1,0 +1,11 @@
+.produto
+{
+    padding: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.promocao
+{
+    color: red;
+}
