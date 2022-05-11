@@ -1,0 +1,61 @@
+#nav {
+	line-height:2em;
+	background-color: white;
+	height: 3.1em;
+	
+	padding: 0.3em;
+	
+	width: 100%;
+	border: 0px solid red;
+}
+
+/* vinculado ao elemento UL */
+.menu{
+	list-style:none;  /* tira o bullet */
+	border:1px solid #c0c0c0;    /* cria borda cinza */
+	float:left;   /* faz o alinhamento ser a esquerda */
+}
+
+/* pega os itens de UL */
+.menu li{
+	position:relative;   /* faz os elementos filhos ficarem posicionados com base no elemento pai */
+	float:left;   /* faz o alinhamento ser a esquerda */
+	border-right:1px solid #c0c0c0; /* cria bordas separando os elementos */
+	background: white;
+}
+
+/* pega os links dentro dos itens */
+.menu li a {
+	color: black; 
+	text-decoration:none; 
+	padding:5px 10px; 
+	display:block; /* faz o item ocupar todo espaço horizontal disponível */
+}
+
+/* pega os links dentro dos itens quando o mouse passa por cima */
+.menu li a:hover{
+	background: black;
+	color: white;
+}
+
+/* pega a lista dentro da lista */
+.menu li ul{
+	position:absolute; /* posição absoluta, para ele "flutuar" */
+	display:none; /* esconde subitens para só aparecer no hover */
+}  
+
+/* pega as listas "filhas" dos itens com o mouse */
+.menu li:hover ul {
+	display:block; /* mostra na tela */
+}
+
+/* pega itens da lista filha */
+.menu li ul li{
+	border:1px solid #c0c0c0;
+	display:block;
+	width:200px;
+}
+
+/* acerta espaçamento do menu e dos submenus */
+.menu {margin: 0; padding: 0;}
+.menu ul {margin: 0; padding: 0; z-index: 1000;}
